@@ -48,7 +48,7 @@ for i in range(1, data.shape[0]):
         
 l = data['lower_lim'].iloc[modal_class]
 f1 = data['Frequency'].iloc[modal_class]
-f0 = data['Frequency'].iloc[modal_class]
+f0 = data['Frequency'].iloc[modal_class - 1]
 f2 = data['Frequency'].iloc[modal_class + 1]
 
 print(f"Mode = {l + (f1-f0)/(2*f1 - f0 - f2) * 10}")
